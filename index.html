@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      
+
+      <div class="first">
+        <div class="spotify flex">
+    
+            <div class="logo1 flex">
+                <img class="invert logo" src="logo.svg" alt="" />
+                  <img class="invert close" src="close.svg" alt="">
+                
+            </div>
+           
+            <div class="homeetc flex">
+              <img class="home invert" src="home.svg" alt="" />
+              <span>Home</span>
+            </div>
+
+            <div class="search1 flex">
+              <img class="search invert" src="search.svg" alt="" />
+              <span>Search</span>
+            </div>
+            
+
+         
+        </div>
+
+        <div class="library">
+          <div class="li flex">
+            <img class="invert lib" src="library.svg" alt="" /><span
+              >Your Library</span
+            >
+
+            <span><img class="invert plus" src="plus.svg" alt="" /></span>
+          </div>
+
+          <div class="songslist">
+            <ul>
+              <li>
+                <img class="music" src="music.svg" alt="">
+                <div class="info">
+                  <div class="songName">Song Name</div>
+                  <div class="songArtist">Song Artist</div>
+                </div>
+                <img class="invert playnow" src="play-button-movie-svgrepo-com.svg" alt="">
+              </li>
+                
+              
+  </ul>
+          </div>
+
+
+          <div class="vagerah">
+            <div class="legalwala flex">
+              <div class="legal">
+                Legal
+              </div>
+
+              <div class="safety">
+                Safety & Privacy Center
+              </div>
+
+              <div class="privacy">
+                Privacy Policy
+              </div>
+            </div>
+
+<div class="cookiesvagerah flex">
+  <div class="cookies">
+    Cookies
+  </div>
+  
+  <div class="about">
+    About Ads
+  </div>
+  
+  <div class="accessibility">Accessibility</div>
+</div>
+
+<div class="cookies1">
+  Cookies
+</div>
+
+          </div>
+        </div>
+
+
+
+        <!-- <div class="footer flex">
+            <div class="text">
+              <div class="preview">Preview of Spotify</div>
+    
+              <div class="credit">
+                Sign up to get unlimited songs and podcasts with occasional ads. No
+                credit cards needed.
+              </div>
+            </div>
+    
+            <div class="button1">
+              <button>Sign up free</button>
+            </div>
+          </div> -->
+      </div>
+
+
+<div class="second">
+    
+  <div class="header">
+   
+
+    <div class="ok flex">
+
+      <div class="hamburger">
+        <img class="invert" src="burger-menu-svgrepo-com.svg" alt="">
+      </div>
+
+        <button class="button2">
+            <img class="invert" src="back.svg" alt="">
+        </button>
+    
+        <button class="button3">
+    <img class="invert" src="frwrd.svg" alt="">
+        </button>
+    
+
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="searchSpotify()">Search</button>
+    <div id="searchResults"> </div>
+    <audio id="audioPlayer" controls style="display:none;"></audio>
+    </div>
+
+   
+
+<div class="okok flex">
+    <div class="signup okok1">Sign up</div>
+
+<button class="login">
+    Log in
+</button>
+</div>
+</div>
+
+<div class="playlists">
+  <div class="dekhloab flex">
+    <div class="here">
+      <h2>Spotify Playlists</h2>
+    </div>
+  
+    <!-- <div class="showall">
+      <button class="showallbtn">Show all</button>
+    </div> -->
+  </div>
+
+  <div class="cardcontainer flex">
+    <div data-folder="sehra" class="card card1">
+
+        <!-- <div class="green">
+          <button class="custom-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="play1">
+              <path fill="#000" d="M7 17.259V6.741a1 1 0 0 1 1.504-.864l9.015 5.26a1 1 0 0 1 0 1.727l-9.015 5.259A1 1 0 0 1 7 17.259Z"></path>
+            </svg>
+          </button>
+        </div> -->
+        
+
+
+      <img class="sehra" src="https://rb.gy/sdw514" alt="">
+      <h5 class="title">Sehra</h2>
+      <p class="para">Sehra – a bittersweet love story in two songs by Vilen. Sehra takes you on a journey of falling in love.
+        With Fir Mile, experience the innocent joy of falling in love, stolen glances, shy smiles and the excitement of new beginnings. As the video progresses, the mood shifts with the introduction of Sehra as it paints the melancholic picture of unfulfilled promises and bittersweet goodbyes.</p>
+    </div>
+
+
+    <div data-folder="kabootar" class="card card2">
+
+      <!-- <button class="custom-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="play1">
+          <path fill="#000" d="M7 17.259V6.741a1 1 0 0 1 1.504-.864l9.015 5.26a1 1 0 0 1 0 1.727l-9.015 5.259A1 1 0 0 1 7 17.259Z"></path>
+        </svg>
+      </button> -->
+
+      <img class="kabootar" src="Screenshot (62).png" alt="">
+      <h5 class="title">Kabootar</h2>
+      <p class="para">Arhum Fulfagar </p>
+    </div>
+
+    <div data-folder="mai_ni_meriye" class="card card3">
+
+      <!-- <button class="custom-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="play1">
+          <path fill="#000" d="M7 17.259V6.741a1 1 0 0 1 1.504-.864l9.015 5.26a1 1 0 0 1 0 1.727l-9.015 5.259A1 1 0 0 1 7 17.259Z"></path>
+        </svg>
+      </button> -->
+
+      <img src="Screenshot (67).png" alt="">
+      <h5 class="title">Mai ni Meriye re</h2>
+      <p class="para">Jonita Gandhi</p>
+    </div>
+
+    <div data-folder="dori" class="card card4">
+
+      <!-- <button class="custom-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="play1">
+          <path fill="#000" d="M7 17.259V6.741a1 1 0 0 1 1.504-.864l9.015 5.26a1 1 0 0 1 0 1.727l-9.015 5.259A1 1 0 0 1 7 17.259Z"></path>
+        </svg>
+      </button> -->
+
+      <img src="Screenshot (64).png" alt="">
+      <h5 class="title">Dori</h2>
+      <p class="para">Dori song of artist Jai dhir.</p>
+    </div>
+
+    <div data-folder="taaj" class="card card5">
+
+      <!-- <button class="custom-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="play1">
+          <path fill="#000" d="M7 17.259V6.741a1 1 0 0 1 1.504-.864l9.015 5.26a1 1 0 0 1 0 1.727l-9.015 5.259A1 1 0 0 1 7 17.259Z"></path>
+        </svg>
+      </button> -->
+
+      <img src="Screenshot (65).png" alt="">
+      <h5 class="title">Taaj</h2>
+      <p class="para">Taaj of artist named Jai Dhir.</p>
+    </div>
+
+    <div data-folder="sehra" class="card card6">
+
+      <div class="green">
+        <!-- <button class="custom-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="play1">
+            <path fill="#000" d="M7 17.259V6.741a1 1 0 0 1 1.504-.864l9.015 5.26a1 1 0 0 1 0 1.727l-9.015 5.259A1 1 0 0 1 7 17.259Z"></path>
+          </svg>
+        </button> -->
+      </div>
+      
+
+
+    <img class="sehra" src="https://rb.gy/sdw514" alt="">
+    <h5 class="title">Sehra</h2>
+    <p class="para">Sehra – a bittersweet love story in two songs by Vilen. Sehra takes you on a journey of falling in love.
+      With Fir Mile, experience the innocent joy of falling in love, stolen glances, shy smiles and the excitement of new beginnings. As the video progresses, the mood shifts with the introduction of Sehra as it paints the melancholic picture of unfulfilled promises and bittersweet goodbyes.</p>
+  </div>
+
+    
+  </div>
+  
+<div class="faltu flex">
+  <div class="company flex">
+    Company
+    <div class="aboutus">
+      <a class="aboutus" href="">About us</a>
+    </div>
+    <div class="jobs">
+      <a class="jobs" href="">Jobs</a>
+    </div>
+    <div class="fortherecord">
+      <a class="fortherecord" href="">For the record</a>
+    </div>
+
+
+  </div>
+
+  <div class="communities flex">
+    Communities
+    <div class="forartists">
+      <a class="forartists" href="">For artists</a>
+    </div>
+    <div class="developers">
+      <a class="developers" href="">Developers</a>
+    </div>
+    <div class="advertising">
+      <a class="advertising" href="">Advertising</a>
+    </div>
+    <div class="investors">
+      <a class="investors" href="">Investors</a>
+    </div>
+    <div class="vendors">
+      <a class="vendors" href="">Vendors</a>
+    </div>
+
+
+  </div>
+
+  <div class="usefullinks flex">
+    Useful links
+    <div class="support">
+      <a class="support" href="">Support</a>
+    </div>
+    <div class="freemobileapp">
+      <a class="freemobileapp" href="">Free mobile app</a>
+    </div>
+  </div>
+
+<div class="socialmedia">
+
+  <button type="button" class="insta">
+    <a target="_blank" href="https://www.instagram.com/spotify/"><img class="invert" src="insta.svg" alt=""></a>
+  </button>
+  
+  <button type="button" class="twitter">
+    <a target="_blank" href="https://twitter.com/spotify"><img class="invert" src="twitter.svg" alt=""></a>
+  </button>
+  
+  <button type="button" class="facebook">
+    <a target="_blank" href="https://www.facebook.com/Spotify"><img class="invert" src="facebook.svg" alt=""></a>
+  </button>
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="blankspace">
+
+</div>
+
+<div class="copyright">
+  © 2024 Spotify AB
+</div>
+  
+<div class="bar flex">
+  
+  <div class="seekbar">
+    <div class="circle">
+      
+    </div>
+  </div>
+
+<div class="timeetc flex">
+  
+  <div class="songinfo">
+    
+  </div>
+  
+  
+    <div class="playnextetc flex">
+      <div class="invert backward">
+        <img src="media-player-ui-button-back-song-svgrepo-com.svg" alt="">
+      </div>
+      
+        <div class="invert playbtn">
+          <img id="play" src="play-button-movie-svgrepo-com.svg" alt="">
+        </div>
+      
+        <div class="invert forward">
+          <img src="media-player-ui-button-next-song-svgrepo-com.svg" alt="">
+        </div>
+    </div>
+    
+      <div class="songtime">
+  
+      </div>
+
+</div>
+  
+  </div>
+
+</div>
+</div>
+
+    </div>
+
+   
+
+  </body>
+</html>
